@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="funcShowAndHide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iiB-Qy-V3u">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.33725490196078434" green="0.53333333333333333" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a Default Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7l-Jv-ke9">
+                                <rect key="frame" x="189" y="120" width="223" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="LaJ-Pd-vNU"/>
+                                    <constraint firstAttribute="height" constant="33" id="xsp-lW-zvU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.95559221058298649" green="1" blue="0.13782843083551" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the Alternate Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8I-oA-fbl">
+                                <rect key="frame" x="173" y="120" width="254" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="98e-Xy-ZDD"/>
+                                    <constraint firstAttribute="height" constant="28" id="DwG-UF-DX3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhQ-gf-sZK">
+                                <rect key="frame" x="235" y="385" width="131" height="30"/>
+                                <color key="backgroundColor" red="0.58851439790575921" green="0.08992536325016838" blue="0.1380910333354976" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <state key="normal" title="Press to Change">
+                                    <color key="titleColor" red="0.95598252778966553" green="0.9435393716146363" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="imgPressToChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xRl-p9-0uY"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yas-31-3Br">
+                                <rect key="frame" x="235" y="385" width="131" height="30"/>
+                                <color key="backgroundColor" red="0.41356071099389302" green="0.58851439790000004" blue="0.34602656665373799" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0HX-A7-kbX"/>
+                                    <constraint firstAttribute="width" constant="131" id="3s8-bh-XAd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <state key="normal" title="Press to Change">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPressToChange2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="064-7r-s6H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yas-31-3Br" secondAttribute="bottom" constant="185" id="2Ok-Ld-JTR"/>
+                            <constraint firstItem="K8I-oA-fbl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="7cN-zl-sgr"/>
+                            <constraint firstItem="Yas-31-3Br" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bt1-Or-uF9"/>
+                            <constraint firstItem="e7l-Jv-ke9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HAq-Dg-WdE"/>
+                            <constraint firstItem="iiB-Qy-V3u" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Pta-YT-jlA"/>
+                            <constraint firstItem="iiB-Qy-V3u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QX4-Lq-6cc"/>
+                            <constraint firstItem="uhQ-gf-sZK" firstAttribute="baseline" secondItem="Yas-31-3Br" secondAttribute="firstBaseline" id="RDM-Df-TM8"/>
+                            <constraint firstItem="uhQ-gf-sZK" firstAttribute="top" secondItem="Yas-31-3Br" secondAttribute="top" id="Ws0-vR-u4Y"/>
+                            <constraint firstAttribute="trailing" secondItem="iiB-Qy-V3u" secondAttribute="trailing" id="aND-eL-MFv"/>
+                            <constraint firstItem="uhQ-gf-sZK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ef6-xb-oQ1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iiB-Qy-V3u" secondAttribute="bottom" id="fUF-X7-Y6e"/>
+                            <constraint firstItem="Yas-31-3Br" firstAttribute="leading" secondItem="uhQ-gf-sZK" secondAttribute="leading" id="foB-C2-6Js"/>
+                            <constraint firstItem="K8I-oA-fbl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oD3-fs-fLq"/>
+                            <constraint firstItem="K8I-oA-fbl" firstAttribute="firstBaseline" secondItem="e7l-Jv-ke9" secondAttribute="firstBaseline" id="pFf-DC-74b"/>
+                            <constraint firstItem="Yas-31-3Br" firstAttribute="baseline" secondItem="uhQ-gf-sZK" secondAttribute="firstBaseline" id="sgU-Wq-24E"/>
+                            <constraint firstItem="iiB-Qy-V3u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xZx-CM-6VL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPressToChange" destination="uhQ-gf-sZK" id="SUe-5u-daP"/>
+                        <outlet property="btnPressToChange2" destination="Yas-31-3Br" id="av4-XM-zSG"/>
+                        <outlet property="imgBkgrd1" destination="iiB-Qy-V3u" id="b55-MD-P4b"/>
+                        <outlet property="lblWelcome1" destination="e7l-Jv-ke9" id="SD2-WV-ysd"/>
+                        <outlet property="lblWelcome2" destination="K8I-oA-fbl" id="YLk-c7-tJ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
